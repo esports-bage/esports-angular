@@ -27,7 +27,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const offset = window.pageYOffset;
+    const offset = window.scrollY;
     this.isScrolled = offset > 0;
   }
   
